@@ -1,0 +1,49 @@
+.evaluation {
+	@include flex ($align-items: center);
+
+	border-top: 0.5px solid $secondaryColor;
+	border-bottom: 0.5px solid $secondaryColor;
+
+	// .evaluation__wrapper
+	&__wrapper {
+
+		@include flex (center, $flex-direction: column);
+
+		margin-left: 10px;
+
+		@include media (xs) {
+			@include flex ($align-items: center, $flex-direction: row);
+		}
+
+	}
+
+	// .evalution__title
+	&__title {
+		@include font (16px, 20px, 500);
+	
+		margin-bottom: 5px;
+
+		@include media (sm) {
+			@include font (18px, 22px);
+		}
+	}
+
+	&__text {
+		@include font (14px, 20px);
+		color: $textColor;
+		margin-bottom: 4px;
+
+		@include media (xs) {
+			@include font (18px, 26px, 500);
+			margin-bottom: 0;
+			margin-right: 10px;
+		}
+
+
+	}
+
+	// .evaluation__svg
+	&__svg {
+		@include wh (118px, 17px)
+	}
+}

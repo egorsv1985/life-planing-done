@@ -1,0 +1,16 @@
+.video {
+	order: -1;
+	&__img {
+		@include wh (100%, 200px);		
+    object-fit: cover;
+	 @include media (xs) {
+		 height: 340px;
+	 }
+	 @include media (sm) {
+		 height: 440px;
+	 }
+	 @include media (md) {
+		 height: 374px;
+	 }
+	}
+}

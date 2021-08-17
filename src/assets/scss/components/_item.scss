@@ -1,0 +1,51 @@
+.item {
+	@include media (md) {
+		@include flex();
+	}
+	// .item__num
+	&__num {
+		@include wh(66px);
+		background-color: $accentColor;
+		@include font (30px, 44px, 700, center);
+		color: $primaryColor;
+		border-radius: 50%;
+		@include flex (center, center);
+		margin-bottom: 20px;
+		@include media (md) {
+			@include font (35px, 51px);
+			@include wh(61px);
+			margin-bottom: 35px;
+			margin-right: 15px;
+		}
+		
+	}
+	
+		// .item__wrap
+		&__wrap {
+			@include flex (flex-start, $flex-direction: column);
+			padding-top: 5px;
+		}
+
+
+	// .item__text
+	&__text {
+		@include font (16px, 23px, 500, center);
+		
+		margin-bottom: 5px;
+		@include media (md) {
+			@include font (18px, 27px);
+		}
+		
+
+	}
+
+	// .item__info
+	&__info {
+		@include font (14px, 20px, 400, center);
+		color: $textColor;
+		@include media (md) {
+			@include font (18px, 26px, $text-align: left);
+		}
+	}
+}
+

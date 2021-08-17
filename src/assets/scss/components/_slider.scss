@@ -1,0 +1,157 @@
+// /* Слайдер */
+// .slick-slider {}
+
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized {}
+
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted {}
+
+// /* Ограничивающая оболочка */
+// .slick-list {
+// 	overflow: hidden;
+// }
+
+// /* Лента слайдов */
+// .slick-track {}
+
+// /* Слайд */
+// .slick-slide {}
+
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active {}
+
+// /* Слайд основной */
+// .slick-slide.slick-current {}
+
+// /* Слайд по центру */
+// .slick-slide.slick-center {}
+
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned {}
+
+// /* Стрелка */
+// .slick-arrow {}
+
+// /* Стрелка влево */
+// .slick-arrow.slick-prev {}
+
+// /* Стрелка вправо */
+// .slick-arrow.slick-next {}
+
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled {}
+
+// /* Точки (булиты) */
+// .slick-dots {
+
+// }
+
+// .slick-dots li {
+
+// }
+
+// /* Активная точка */
+// .slick-dots li.slick-active {
+// 	@include wh (10px);
+// 	background-color: $accentColor;
+// 	border-radius: 50%;
+// }
+
+// /* Элемент точки */
+// .slick-dots li button {
+// 	@include wh(10px);
+// 	border: 0.5px solid $textColorLight;
+// 	border-radius: 50%;
+// }
+// .slick-dotted.slick-slider {
+// 	margin-bottom: 40px;
+// }
+
+.slider {
+
+	position: relative;
+
+	// /* Ограничивающая оболочка */
+	.slick-list {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	// /* Лента слайдов */
+	.slick-track {
+		@include flex (center, center);
+	}
+
+	// .slider__item
+	&__item {
+		@include flex (center, center, $flex-direction: column);
+		text-align: center;
+	}
+
+
+	.slick-arrow {
+		@include background (url("../images/map/map-arrow.svg"));
+		@include pos (absolute, $top: 28%);
+		z-index: 10;
+		@include wh(11px, 19px);
+		color: $secondaryColor;
+		font-size: 0;
+
+	}
+
+	.slick-prev {
+		left: 10%;
+
+		@include media (xs) {
+			left: 22%;
+		}
+	}
+
+	.slick-next {
+		right: 6%;
+		transform: translateY(-50%) rotateY(180deg);
+
+		@include media (xs) {
+			right: 20%;
+		}
+	}
+
+	.slick-dots {
+		@include flex (center, center);
+
+	}
+
+	.slick-dots li {
+		list-style: none;
+		@include wh(10px);
+	}
+
+	.slick-dots button {
+		font-size: 0;
+		@include wh(10px);
+		border: 0.5px solid $textColorLight;
+		border-radius: 50%;
+		padding: 0;
+	}
+
+	.slick-dots li button:before {
+		@include wh(10px);
+		font-size: 0;
+	}
+
+	.slick-dots li.slick-active button {
+		font-size: 0;
+		@include wh(10px);
+		border: 0.5px solid $accentColor;
+		border-radius: 50%;
+		padding: 0;
+		background-color: $accentColor;
+	}
+
+	.slick-prev:before,
+	.slick-next:before {
+		content: '';
+		display: none;
+	}
+}
