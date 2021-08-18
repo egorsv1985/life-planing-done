@@ -1,60 +1,101 @@
 .header {
 
-	.container {
-		@extend %container;
-	}
-
-	background-color: $primaryColor;
-
-	@include media (sm) {
-		box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-	}
-
-	&__inner {
-		@include flex (space-between, center);
-		height: 60px;
-
-		@include media (sm) {
-			height: 100px;
-		}
-	}
-
-	// .header__wrapper
-	&__wrapper {
-		@include flex ($align-items: center);
-	}
-
-	&__phone-city {
-		@include font (14px, 17px);
-		color: $linkColor;
-
-		@include media (xs) {
-			display: none;
-		}
-	}
-
-	&__phone {
-		display: none;
-
-		@include media (xs) {
-			display: flex;
-		}
-
-		span {
-			@include font (14px, 17px);
-			color: $textColorLight;
-		}
-	}
-
-	&__phone-link {
-		@include font (14px, 17px);
-		color: $textColor;
-	}
-
-	// .header__user
-	&__user {
-		@include media (md) {
-			display: none;
-		}
+	// .header__btn
+	&__btn {
+		@include wh(110px, 40px);
+		border-radius: 2px;
+		background-color: #D2E1FF;
+		@include font(13px, 16px);
+		font-family: "Quicksand-bold";
+		border: none;
+		color: #3A79FF;
 	}
 }
+
+.container {}
+
+.navbar {}
+
+.navbar-expand-lg {}
+
+.navbar-light {}
+
+.bg-light {}
+
+.container-fluid {}
+
+.navbar-brand {}
+
+.logo {
+	@include wh(26px);
+	background-color: #5E81FE;
+}
+
+.navbar-toggler {}
+
+.navbar-toggler-icon {}
+
+.collapse {}
+
+.navbar-collapse {}
+
+.navbar-nav {}
+
+.me-auto {}
+
+.mb-2 {}
+
+.mb-lg-0 {}
+
+.nav-item {}
+
+.nav-link {}
+
+.active {}
+
+.socials {
+
+	// .socials__menu
+	&__menu {}
+
+	// .socials__item
+	&__item {
+		&:nth-child(2) {
+			width: 15px;
+			height: 12px;
+		}
+	}
+
+	// .socials__link
+	&__link {}
+
+	// .socials__icon
+	&__icon {
+		@include wh(15px, 12px);
+		fill: #6188FF;
+
+
+	}
+
+	// .socials-items:nth-child(2) .socials-link .socials-icon{
+	// 	width: 15px;
+	// 	height: 12px;
+	// }
+
+	// .socials-items:nth-child(3) .socials-link .socials-icon{
+	// 	width: 17px;
+	// 	height: 14px;
+	// }
+
+	// .socials-items:nth-child(4) .socials-link .socials-icon{
+	// 	width: 17px;
+	// 	height: 13px;
+	// }
+
+}
+
+
+
+.btn {}
+
+.btn-outline-success {}
