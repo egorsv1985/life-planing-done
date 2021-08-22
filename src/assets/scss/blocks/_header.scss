@@ -11,7 +11,15 @@
 		background-color: #5E81FE;
 		border-radius: 50%;
 		margin-right: 70px;
+	}
 
+	// .header__btn
+	&__btn {
+		@include wh(110px, 40px);
+		background-color: #D2E1FF;
+		border-radius: 2px;
+		@include font ("Quicksand_Bold", 13px, 16px, center);
+		color: #3A79FF;
 	}
 }
 
@@ -40,13 +48,16 @@
 .menu {
 
 	// .menu__item
-	&__item {}
+	&__item+&__item {
+		margin-left: 40px;
+	}
+
 
 	// .menu__link
 	&__link {
 		@include font ("Quicksand__Medium", 12px, 15px, center, capitalize);
 		letter-spacing: 0.05em;
-		color: #697CA6;
+		color: #697CA6 !important;
 		text-shadow: 0px 0px 5px #E6E6E6;
 	}
 }
@@ -61,7 +72,29 @@
 
 	// .socials__item
 	&__item {}
+
+	// .socials__link
+	&__link {}
+
+	// .socials__icon
+	&__icon {
+		@include wh(9px, 17px);
+	}
 }
+
+.nav-item {}
+
+.nav-link {}
+
+
+.nav-item {}
+
+.socials-link {}
+
+.nav-link {}
+
+.socials-icon {}
+
 
 .d-flex {}
 
