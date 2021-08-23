@@ -16,12 +16,13 @@
 
 	// .header__btn
 	&__btn {
-		@include wh(110px, 40px);
+		@include wh(113px, 43px);
 		background-color: #D2E1FF;
 		border-radius: 2px;
 		@include font ("Quicksand_Bold", 13px, 16px, center);
 		color: #3A79FF;
 		margin: 0 35px;
+		border: none;
 	}
 }
 
@@ -38,8 +39,8 @@
 .container-fluid {}
 
 .navbar-brand {
-	margin-left: 35px;
-	margin-right: 63px;
+	// margin-left: 35px;
+	// margin-right: 63px;
 }
 
 .navbar-toggler {}
@@ -76,6 +77,31 @@
 .socials {
 
 	// .socials__item
+	&__item:nth-child(2) {
+		.socials__link {
+			.socials__icon {
+				@include wh (15px, 12px);
+			}
+		}
+	}
+
+	&__item:nth-child(3) {
+		.socials__link {
+			.socials__icon {
+				@include wh (17px, 14px);
+			}
+		}
+	}
+
+	&__item:nth-child(4) {
+		.socials__link {
+			.socials__icon {
+				@include wh (17px, 13px);
+			}
+		}
+	}
+
+
 	&__item+&__item {
 		margin-left: 10px;
 	}
@@ -86,6 +112,12 @@
 	// .socials__icon
 	&__icon {
 		@include wh(9px, 17px);
+		fill: #B6BAC7;
+
+
+		&:hover {
+			fill: #5E81FE;
+		}
 	}
 }
 

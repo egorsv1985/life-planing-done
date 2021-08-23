@@ -7812,9 +7812,6 @@ textarea.form-control-lg {
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 /* проблема переполнения */
-* {
-  outline: solid 1px red; }
-
 /* Sections
    ========================================================================== */
 /**
@@ -8180,8 +8177,8 @@ template {
     background-color: #5E81FE;
     border-radius: 50%; }
   .header__btn {
-    width: 110px;
-    height: 40px;
+    width: 113px;
+    height: 43px;
     background-color: #D2E1FF;
     border-radius: 2px;
     font-family: "Quicksand_Bold";
@@ -8189,11 +8186,8 @@ template {
     line-height: 16px;
     text-align: center;
     color: #3A79FF;
-    margin: 0 35px; }
-
-.navbar-brand {
-  margin-left: 35px;
-  margin-right: 63px; }
+    margin: 0 35px;
+    border: none; }
 
 .menu__item + .menu__item {
   margin-left: 27px; }
@@ -8208,11 +8202,26 @@ template {
   color: #697CA6 !important;
   text-shadow: 0px 0px 5px #E6E6E6; }
 
+.socials__item:nth-child(2) .socials__link .socials__icon {
+  width: 15px;
+  height: 12px; }
+
+.socials__item:nth-child(3) .socials__link .socials__icon {
+  width: 17px;
+  height: 14px; }
+
+.socials__item:nth-child(4) .socials__link .socials__icon {
+  width: 17px;
+  height: 13px; }
+
 .socials__item + .socials__item {
   margin-left: 10px; }
 
 .socials__icon {
   width: 9px;
-  height: 17px; }
+  height: 17px;
+  fill: #B6BAC7; }
+  .socials__icon:hover {
+    fill: #5E81FE; }
 
 /*# sourceMappingURL=style.min.css.map */
