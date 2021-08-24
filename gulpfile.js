@@ -59,7 +59,7 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-    srcPath + 'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+
     srcPath + 'assets/js/script.js'
 ]
 

@@ -33,12 +33,7 @@
   ],
   "main": "gulpfile.js",
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "bootstrap": "^5.1.0",
-    "slick-carousel": "^1.8.1",
-    "swiper": "^6.8.0",
-    "tilt.js": "^1.2.1",
-    "wow.js": "^1.2.2"
+    "bootstrap": "^5.0.0-beta3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
