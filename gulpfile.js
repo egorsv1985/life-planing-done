@@ -61,7 +61,9 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-    srcPath + '../node_modules/bootstrap/dist/*.js',
+    srcPath + './node_modules/bootstrap/js/dist/*.js',
+    srcPath + './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    srcPath + './node_modules/@popperjs/core/lib/popper-lite.js',
     srcPath + 'assets/js/script.js'
 ]
 

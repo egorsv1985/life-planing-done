@@ -1,0 +1,17 @@
+.menu {
+	margin-left: 50px;
+
+	// .menu__item
+	&__item+&__item {
+		margin-left: 27px;
+	}
+
+
+	// .menu__link
+	&__link {
+		@include font ("Quicksand__Medium", 12px, 15px, center, capitalize);
+		letter-spacing: 0.05em;
+		color: #697CA6 !important;
+		text-shadow: 0px 0px 5px #E6E6E6;
+	}
+}
