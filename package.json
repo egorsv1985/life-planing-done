@@ -4,14 +4,17 @@
   "description": "gulp-project",
   "author": "it-incubator",
   "devDependencies": {
+    "@popperjs/core": "^2.9.3",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gh-pages": "^3.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
     "gulp-concat": "^2.6.1",
     "gulp-cssbeautify": "^3.0.0",
     "gulp-cssnano": "^2.1.3",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
@@ -33,7 +36,7 @@
   ],
   "main": "gulpfile.js",
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3"
+    "bootstrap": "^5.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

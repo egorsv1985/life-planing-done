@@ -12,16 +12,18 @@ const cssbeautify = require('gulp-cssbeautify'); // форматирует css, 
 const removeComments = require('gulp-strip-css-comments'); // удаляет комментарии
 const rename = require('gulp-rename'); // для переименования файлов
 const sass = require('gulp-sass'); // для компиляции sass в css
-const postcss = require('gulp-postcss');
-const pxtorem = require('postcss-pxtorem');
+// const postcss = require('gulp-postcss');
+// const pxtorem = require('postcss-pxtorem');
 const cssnano = require('gulp-cssnano'); //для минификации css
-const uglify = require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
+// const uglify = require('gulp-uglify'); // для минификации (сжатия) js-кода. Обратного преобразования нет.
 const concat = require('gulp-concat'); //"склеивает" несколько файлов в один
 const plumber = require('gulp-plumber'); // для обработки ошибок
 const imagemin = require('gulp-imagemin'); //для минификации изображений
 const del = require('del'); // для удаления файлов и папок
 const notify = require('gulp-notify'); //предоставляет информацию об ошибке
 const browserSync = require('browser-sync').create(); // для запуска сервера и перезагрузки страницы при внесении изменений
+// const usemin = require('gulp-usemin');
+const cache = require('gulp-cache');
 
 
 
@@ -59,13 +61,22 @@ const path = {
 
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
-
+    srcPath + '../node_modules/bootstrap/dist/*.js',
     srcPath + 'assets/js/script.js'
 ]
 
 
 // TASKS
 // объявляем функции под сборки (все пути относительные)
+// !!!!!!! Сделано для Deploy  проекта на GitHub pages
+var ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
+
+
 
 // Локальный сервер
 function serve() {
@@ -275,6 +286,8 @@ function clean(cb) {
     return del(path.clean);
     cb();
 }
+
+
 
 
 
