@@ -12911,33 +12911,8 @@ template {
   font-display: swap;
 }
 
-.header {
-    padding-top: 10px;
-}
-
-.header__menu {
-    background-color: #fff !important;
-}
-
-.header__logo {
-    width: 26px;
-    height: 26px;
-    background-color: #5E81FE;
-    border-radius: 50%;
-}
-
-.header__btn {
-    width: 113px;
-    height: 43px;
-    background-color: #D2E1FF;
-    border-radius: 2px;
-    font-family: "Quicksand_Bold";
-    font-size: 13px;
-    line-height: 16px;
-    text-align: center;
-    color: #3A79FF;
-    margin: 0 35px;
-    border: none;
+.menu {
+    margin-left: 50px;
 }
 
 .menu__item + .menu__item {
@@ -12971,7 +12946,7 @@ template {
 }
 
 .socials__item + .socials__item {
-    margin-left: 10px;
+    margin-left: 3px;
 }
 
 .socials__icon {
@@ -12982,4 +12957,35 @@ template {
 
 .socials__icon:hover {
     fill: #5E81FE;
+}
+
+.header {
+    padding-top: 10px;
+}
+
+.header__menu {
+    background-color: #fff !important;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.header__logo {
+    width: 26px;
+    height: 26px;
+    background-color: #5E81FE;
+    border-radius: 50%;
+}
+
+.header__btn {
+    width: 113px;
+    height: 43px;
+    background-color: #D2E1FF;
+    border-radius: 2px;
+    font-family: "Quicksand_Bold";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #3A79FF;
+    margin-left: 28px;
+    border: none;
 }

@@ -8122,22 +8122,22 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'OpenSans_SemiBold';
+  font-family: 'OpenSans__SemiBold';
   src: local("☺"), url("../fonts/OpenSans-SemiBold.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'OpenSans_Bold';
+  font-family: 'OpenSans__Bold';
   src: local("☺"), url("../fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Quicksand_Bold';
-  src: url("../fonts/Quicksand-Bold.eot");
+  font-family: 'Quicksand__Bold';
+  src: url("../assets/fonts/Quicksand-Bold.eot");
   src: local("☺"), url("../fonts/Quicksand-Bold.woff") format("woff"), url("../fonts/Quicksand-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -8152,7 +8152,7 @@ template {
   font-display: swap; }
 
 @font-face {
-  font-family: 'Quicksand_Regular';
+  font-family: 'Quicksand__Regular';
   src: url("../fonts/Quicksand-Regular.eot");
   src: local("☺"), url("../fonts/Quicksand-Regular.woff") format("woff"), url("../fonts/Quicksand-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -8160,10 +8160,18 @@ template {
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto_Medium';
+  font-family: 'Roboto__Medium';
   src: url("../fonts/Roboto-Medium.eot");
   src: local("☺"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Roboto__Regular';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap; }
 
@@ -8204,7 +8212,7 @@ template {
     fill: #5E81FE; }
 
 .header {
-  padding-top: 10px; }
+  padding: 10px 0; }
   .header__menu {
     background-color: #fff !important;
     padding-left: 33px;
@@ -8219,12 +8227,73 @@ template {
     height: 43px;
     background-color: #D2E1FF;
     border-radius: 2px;
-    font-family: "Quicksand_Bold";
+    font-family: "Quicksand__Bold";
     font-size: 13px;
     line-height: 16px;
     text-align: center;
     color: #3A79FF;
     margin-left: 28px;
     border: none; }
+
+.hero-image {
+  background: url("../images/hero-img/hero-clouds.svg") center no-repeat, linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+  border-top: 1px solid #D8E3FE;
+  padding: 90px 0 208px;
+  position: relative;
+  max-height: 585px; }
+  .hero-image__indicators {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background-color: #5283FF !important;
+    margin-left: 6px !important;
+    margin-right: 6px !important; }
+  .hero-image__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+    margin-bottom: 20px; }
+  .hero-image__title {
+    font-family: "Quicksand__Regular";
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #3D4F9F;
+    margin-bottom: 20px; }
+    .hero-image__title--accent {
+      font-family: "Quicksand__Medium"; }
+  .hero-image__text {
+    font-family: "Roboto__Medium";
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    max-width: 500px;
+    margin: 0 auto 20px; }
+  .hero-image__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+    border-radius: 50%;
+    margin: 0 auto;
+    min-width: 52px;
+    min-height: 52px; }
+  .hero-image__start {
+    width: 10px;
+    height: 11px;
+    fill: #5E81FF; }
+  .hero-image__box {
+    position: absolute;
+    top: 19%;
+    left: 0; }
 
 /*# sourceMappingURL=style.min.css.map */
