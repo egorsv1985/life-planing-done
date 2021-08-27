@@ -1,0 +1,67 @@
+.carousel {}
+
+.slide {}
+
+.carousel-indicators {}
+
+.hero-image {
+
+	// .hero-image__indicators
+	&__indicators {}
+
+	// .hero-image__subtitle
+	&__subtitle {}
+
+	// .hero-image__title
+	&__title {}
+
+	// .hero-image__text
+	&__text {}
+
+	// .hero-image__button
+	&__button {}
+
+	// .hero-image__start
+	&__start {}
+
+	// .hero-image__chart
+	&__chart {}
+}
+
+.active {}
+
+.carousel-inner {}
+
+.carousel-item {}
+
+.play {
+
+	// .play__title--accent
+	&__title--accent {}
+}
+
+.hero-img {
+
+	// .hero-img__box
+	&__box {}
+
+	// .hero-img__control-prev
+	&__control-prev {}
+
+	// .hero-img__control-prev-icon
+	&__control-prev-icon {}
+
+	// .hero-img__control-next
+	&__control-next {}
+
+	// .hero-img__control-next-icon
+	&__control-next-icon {}
+}
+
+.carousel-control-prev {}
+
+.carousel-control-prev-icon {}
+
+.carousel-control-next {}
+
+.carousel-control-next-icon {}
