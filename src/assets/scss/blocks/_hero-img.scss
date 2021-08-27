@@ -1,9 +1,3 @@
-.carousel {}
-
-.slide {}
-
-.carousel-indicators {}
-
 .hero-image {
 	background: url("../images/hero-img/hero-clouds.svg") center no-repeat,
 		linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
@@ -103,17 +97,3 @@
 	// .hero-image__control-next-icon
 	&__control-next-icon {}
 }
-
-.carousel-control-prev {}
-
-.carousel-control-prev-icon {}
-
-.carousel-control-next {}
-
-.carousel-control-next-icon {}
-
-.active {}
-
-.carousel-inner {}
-
-.carousel-item {}
