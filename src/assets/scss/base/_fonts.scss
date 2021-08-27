@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'OpenSans_SemiBold';
+  font-family: 'OpenSans__SemiBold';
   src: local('☺'), url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'OpenSans_Bold';
+  font-family: 'OpenSans__Bold';
   src: local('☺'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
@@ -15,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'Quicksand_Bold';
-  src: url('../fonts/Quicksand-Bold.eot');
+  font-family: 'Quicksand__Bold';
+  src: url('../assets/fonts/Quicksand-Bold.eot');
   src: local('☺'), url('../fonts/Quicksand-Bold.woff') format('woff'),
     url('../fonts/Quicksand-Bold.ttf') format('truetype');
   font-weight: 700;
@@ -34,8 +35,9 @@
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'Quicksand_Regular';
+  font-family: 'Quicksand__Regular';
   src: url('../fonts/Quicksand-Regular.eot');
   src: local('☺'), url('../fonts/Quicksand-Regular.woff') format('woff'),
     url('../fonts/Quicksand-Regular.ttf') format('truetype');
@@ -45,11 +47,21 @@
 }
 
 @font-face {
-  font-family: 'Roboto_Medium';
+  font-family: 'Roboto__Medium';
   src: url('../fonts/Roboto-Medium.eot');
   src: local('☺'), url('../fonts/Roboto-Medium.woff') format('woff'),
     url('../fonts/Roboto-Medium.ttf') format('truetype');
   font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto__Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: local('☺'), url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

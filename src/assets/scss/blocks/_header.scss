@@ -1,5 +1,5 @@
 .header {
-	padding-top: 10px;
+	padding: 10px 0;
 
 	// .header__menu
 	&__menu {
@@ -21,7 +21,7 @@
 		@include wh(113px, 43px);
 		background-color: #D2E1FF;
 		border-radius: 2px;
-		@include font ("Quicksand_Bold", 13px, 16px, center);
+		@include font ("Quicksand__Bold", 13px, 16px, center);
 		color: #3A79FF;
 		margin-left: 28px;
 
