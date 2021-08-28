@@ -8379,4 +8379,100 @@ template {
     top: 12%;
     left: -4%; }
 
+.features {
+  padding-top: 170px;
+  padding-bottom: 175px; }
+  .features__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+    margin-bottom: 20px; }
+  .features__title {
+    font-family: "Quicksand__Medium";
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3D4F9F; }
+  .features__row {
+    margin-top: 90px;
+    margin-bottom: 120px; }
+  .features__col {
+    position: relative;
+    max-width: 205px; }
+    .features__col::after {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+      position: absolute;
+      top: 127px;
+      left: 93%;
+      background-color: #DAE4FE; }
+    .features__col:last-child::after {
+      display: none; }
+  .features__icons-box {
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    background-color: #F1F5FF;
+    position: relative;
+    margin-bottom: 30px; }
+  .features__description {
+    font-family: "OpenSans__Bold";
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #4074F8;
+    margin-bottom: 25px; }
+  .features__text {
+    font-family: "OpenSans__Bold";
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: #ADB3CB;
+    max-width: 140px; }
+    .features__text--line {
+      position: relative; }
+      .features__text--line::after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 184%;
+        background-color: #DAE4FE; }
+      .features__text--line::before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        right: 184%;
+        background-color: #DAE4FE; }
+    .features__text--margin {
+      margin: 0 45px; }
+  .features__btn {
+    width: 113px;
+    height: 43px;
+    font-family: "Quicksand__Regular";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 2px;
+    border: none; }
+    .features__btn:nth-child(1) {
+      background-color: #FFD7D7;
+      color: #D43F3F; }
+    .features__btn:nth-child(3) {
+      background-color: #D2E1FF;
+      color: #3A79FF; }
+  .features__bg {
+    background: url(../images/feautures/features-part1.png) 7% 39% no-repeat, url(../images/feautures/features-part2.png) 94% 22% no-repeat; }
+
 /*# sourceMappingURL=style.min.css.map */
