@@ -13,6 +13,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <!-- !!! убрать контейнер -->
             <nav class="header__menu navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -160,7 +161,8 @@
 
     <section class="customers">
         <div class="container">
-            <div class="customers__row row justify-content-center align-items-center justify-content-lg-between">
+            <div
+                class="customers__row row justify-content-center align-items-center justify-content-lg-between mx-auto my-0">
                 <div class="col-auto">
                     <a href="#" class="customers__link">
                         <svg class="customers__logo">
@@ -205,7 +207,28 @@
         </div>
     </section>
 
-
+    <section class="plan">
+        <div class="container">
+            <div class="row">
+                <div class="plan__content col-5 offset-lg-1">
+                    <h3 class="plan__subtitle">DESKTOP AND MOBILE APP</h3>
+                    <h2 class="plan__title">Plan and manage</h2>
+                    <p class="plan__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
+                        laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque
+                        no sea. Mea ex malis mollis oporteat. Eum an expetenda consequat.</p>
+                    <div class="plan__buttons row g-0">
+                        <button type="button" class="plan__btn btn btn-primary">View video</button>
+                        <button type="button" class="plan__btn btn btn-light">See features</button>
+                    </div>
+                </div>
+                <div class="plan__bg col-6 position-relative">
+                    <img class="plan__img position-absolute" src="./assets/images/plan/plan-bg1.png" alt="bg-1">
+                    <img class="plan__img position-absolute" src="./assets/images/plan/plan-bg2.png" alt="bg-2">
+                    <img class="plan__img position-absolute" src="./assets/images/plan/plan-bg3.png" alt="bg-3">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

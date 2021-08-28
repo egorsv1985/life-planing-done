@@ -1,0 +1,93 @@
+.plan {
+
+	padding-top: 210px;
+	padding-bottom: 220px;
+	background-color: #F5F8FF;
+
+
+
+	// .plan__content
+	&__content {
+		padding-left: 92px;
+	}
+
+	// .plan__subtitle
+	&__subtitle {
+		@include font ("Roboto__Medium", 10px, 12px, $text-transform: uppercase);
+		letter-spacing: 0.1em;
+		color: #3D4F9F;
+		margin-bottom: 25px;
+
+	}
+
+	// .plan__title
+	&__title {
+		@include font ("Quicksand__Medium", 36px, 45px);
+		color: #3D4F9F;
+		margin-bottom: 25px;
+	}
+
+	// .plan__text
+	&__text {
+		@include font ("Roboto__Regular", 15px, 29px);
+		letter-spacing: 0.03em;
+		color: #8D96BD;
+		max-width: 410px;
+		margin-bottom: 55px;
+	}
+
+	// .plan__buttons
+	&__buttons {}
+
+	// .plan__btn
+	&__btn {
+		@include wh (130px, 43px);
+		border-radius: 2px;
+		@include font ("Quicksand__Medium", 13px, 16px, center);
+
+		&:nth-child(1) {
+			background-color: #4C85FF;
+			box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+			position: relative;
+			padding-left: 0;
+			padding-right: 15px;
+
+
+			&::after {
+				@include pseudo;
+				@include background (url("../images/plan/plan-start.png"));
+				@include pos (absolute, $top: 43%, $right: 19%);
+				@include wh (7px, 8px);
+				background-color: #fff;
+				color: #FFFFFF;
+			}
+		}
+
+		&:nth-child(2) {
+			border: 1px solid #D1D1E4;
+			color: #ADB4D2;
+
+		}
+	}
+
+	// .plan__bg
+	&__bg {}
+
+	// .plan__img
+	&__img {
+		&:nth-child(1) {
+			top: -17%;
+			left: -21%;
+		}
+
+		&:nth-child(2) {
+			top: 6%;
+			right: -3%;
+		}
+
+		&:nth-child(3) {
+			top: 12%;
+			left: -4%;
+		}
+	}
+}
