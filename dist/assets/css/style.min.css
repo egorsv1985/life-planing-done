@@ -8296,4 +8296,19 @@ template {
     top: 19%;
     left: 0; }
 
+.customers {
+  border-top: 1px solid #D8E3FE;
+  border-bottom: 1px solid #D8E3FE; }
+  .customers__row {
+    min-height: 145px;
+    max-width: 940px;
+    margin: 0 auto; }
+  .customers__logo {
+    width: 117px;
+    height: 29px;
+    fill: #D6DAE5;
+    transition: fill 500ms ease; }
+    .customers__logo:hover {
+      fill: #5982E7; }
+
 /*# sourceMappingURL=style.min.css.map */

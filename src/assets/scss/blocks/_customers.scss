@@ -1,0 +1,25 @@
+.customers {
+	border-top: 1px solid #D8E3FE;
+	border-bottom: 1px solid #D8E3FE;
+
+	// .customers__row
+	&__row {
+		min-height: 145px;
+		max-width: 940px;
+		margin: 0 auto;
+	}
+
+	// .customers__link
+	&__link {}
+
+	// .customers__logo
+	&__logo {
+		@include wh(117px, 29px);
+		fill: #D6DAE5;
+		transition: fill 500ms ease;
+
+		&:hover {
+			fill: #5982E7;
+		}
+	}
+}
