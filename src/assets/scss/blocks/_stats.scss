@@ -1,0 +1,58 @@
+.stats {
+
+	border-top: 1px solid #D8E3FE;
+	border-bottom: 1px solid #D8E3FE;
+
+	// .stats__row
+	&__row {}
+
+	// .stats__col
+	&__col {}
+
+	// .stats__col--left
+	&__col--left {
+		padding: 63px 92px 65px 0;
+	}
+
+	// .stats__col--blue
+	&__col--blue {
+		background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+	}
+
+	// .stats__blue
+	&__blue {
+		color: #5E80FF;
+	}
+
+	// .stats__img
+	&__img {}
+
+	// .stats__title
+	&__title {
+		@include font ("Quicksand__Regular", 48px, 83px);
+		letter-spacing: 0.03em;
+		margin-top: 15px;
+	}
+
+	// .stats__text
+	&__text {
+		@include font ("Quicksand__Medium", 18px, 23px);
+		letter-spacing: 0.03em;
+		max-width: 260px;
+	}
+
+	// .stats__col--right
+	&__col--right {
+		padding: 63px 0 65px 92px;
+	}
+
+	// .stats__col--light-blue
+	&__col--light-blue {
+		background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+	}
+
+	// .stats__white
+	&__white {
+		color: #FFFFFF;
+	}
+}

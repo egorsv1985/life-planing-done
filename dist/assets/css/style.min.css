@@ -8475,4 +8475,32 @@ template {
   .features__bg {
     background: url(../images/feautures/features-part1.png) 7% 39% no-repeat, url(../images/feautures/features-part2.png) 94% 22% no-repeat; }
 
+.stats {
+  border-top: 1px solid #D8E3FE;
+  border-bottom: 1px solid #D8E3FE; }
+  .stats__col--left {
+    padding: 63px 92px 65px 0; }
+  .stats__col--blue {
+    background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%); }
+  .stats__blue {
+    color: #5E80FF; }
+  .stats__title {
+    font-family: "Quicksand__Regular";
+    font-size: 48px;
+    line-height: 83px;
+    letter-spacing: 0.03em;
+    margin-top: 15px; }
+  .stats__text {
+    font-family: "Quicksand__Medium";
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    max-width: 260px; }
+  .stats__col--right {
+    padding: 63px 0 65px 92px; }
+  .stats__col--light-blue {
+    background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%); }
+  .stats__white {
+    color: #FFFFFF; }
+
 /*# sourceMappingURL=style.min.css.map */
