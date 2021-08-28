@@ -1,0 +1,122 @@
+.features {
+	padding-top: 170px;
+	padding-bottom: 175px;
+
+
+	// .features__subtitle
+	&__subtitle {
+		@include font ("Roboto__Medium", 10px, 12px, center, uppercase);
+		letter-spacing: 0.1em;
+		color: #3D4F9F;
+		margin-bottom: 20px;
+	}
+
+	// .features__title
+	&__title {
+
+		@include font ("Quicksand__Medium", 24px, 30px, center);
+		color: #3D4F9F;
+	}
+
+	// .features__row
+	&__row {
+		margin-top: 90px;
+		margin-bottom: 120px;
+	}
+
+	// .features__col
+	&__col {
+		position: relative;
+		max-width: 205px;
+
+		&::after {
+			@include pseudo;
+			@include wh (28px, 1px);
+			@include pos (absolute, $top:127px, $left: 93%);
+			background-color: #DAE4FE;
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+
+	// .features__icons-box
+	&__icons-box {
+		@include wh (69px);
+		border-radius: 50%;
+		background-color: #F1F5FF;
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+
+	// .features__description
+	&__description {
+		@include font ("OpenSans__Bold", 14px, 25px, center);
+		color: #4074F8;
+		margin-bottom: 25px;
+	}
+
+	// .features__text
+	&__text {
+		@include font ("OpenSans__Bold", 11px, 19px, center);
+		color: #ADB3CB;
+		max-width: 140px;
+
+		&--line {
+			position: relative;
+
+			&::after {
+				@include pseudo;
+				@include wh (15px, 1px);
+				@include pos (absolute, $top: 50%, $left:184%);
+				background-color: #DAE4FE;
+			}
+
+			&::before {
+				@include pseudo;
+				@include wh (15px, 1px);
+				@include pos (absolute, $top: 50%, $right:184%);
+				background-color: #DAE4FE;
+			}
+		}
+
+		&--margin {
+			margin: 0 45px;
+		}
+	}
+
+	// .features__buttons
+	&__buttons {}
+
+	// .features__btn
+	&__btn {
+		@include wh (113px, 43px);
+		@include font ("Quicksand__Regular", 13px, 16px, center);
+		border-radius: 2px;
+		border: none;
+
+		&:nth-child(1) {
+			background-color: #FFD7D7;
+			color: #D43F3F;
+		}
+
+		&:nth-child(3) {
+			background-color: #D2E1FF;
+			color: #3A79FF;
+		}
+	}
+
+	// .features__bg
+	&__bg {
+		background:
+			url(../images/feautures/features-part1.png) 7% 39% no-repeat,
+			url(../images/feautures/features-part2.png) 94% 22% no-repeat;
+	}
+
+
+	// &__clouds {
+	// 	@include pos (absolute, $top:10%, $left: 10%);
+	// }
+}
