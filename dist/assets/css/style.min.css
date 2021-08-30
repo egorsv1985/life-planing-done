@@ -8540,4 +8540,22 @@ template {
   letter-spacing: 0.03em;
   color: #8D96BD; }
 
+.blog__btn {
+  font-family: "Quicksand__Medium";
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  width: 113px;
+  height: 43px;
+  border-radius: 2px;
+  border: none; }
+  .blog__btn--bg-light-blue {
+    background-color: #D2E1FF; }
+  .blog__btn--long {
+    width: 211px; }
+  .blog__btn--light-blue {
+    color: #A6B6DA; }
+  .blog__btn--blue {
+    color: #3A79FF; }
+
 /*# sourceMappingURL=style.min.css.map */

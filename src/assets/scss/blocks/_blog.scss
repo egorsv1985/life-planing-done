@@ -66,7 +66,28 @@
 	&__buttons {}
 
 	// .blog__btn
-	&__btn {}
+	&__btn {
+		@include font ("Quicksand__Medium", 13px, 16px, center);
+		@include wh (113px, 43px);
+		border-radius: 2px;
+		border: none;
+
+		&--bg-light-blue {
+			background-color: #D2E1FF;
+		}
+
+		&--long {
+			width: 211px;
+		}
+
+		&--light-blue {
+			color: #A6B6DA;
+		}
+
+		&--blue {
+			color: #3A79FF;
+		}
+	}
 
 	// .blog__control
 	&__control {}
@@ -86,45 +107,3 @@
 	// .blog__control-icon--next
 	&__control-icon--next {}
 }
-
-.container {}
-
-.d-flex {}
-
-.flex-column {}
-
-.align-items-center {}
-
-.carousel {}
-
-.slide {}
-
-.carousel-indicators {}
-
-.active {}
-
-.carousel-inner {}
-
-.carousel-item {}
-
-.row {}
-
-.col-6 {}
-
-.justify-content-center {}
-
-.btn {}
-
-.btn-primary {}
-
-.btn-outline-primary {}
-
-.carousel-control-prev {}
-
-.carousel-control-prev-icon {}
-
-.visually-hidden {}
-
-.carousel-control-next {}
-
-.carousel-control-next-icon {}
