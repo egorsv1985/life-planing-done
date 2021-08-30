@@ -78,11 +78,14 @@
 	// .hero-image__box
 	&__box {
 		@include pos (absolute, 19%, $left: 0);
+		width: 100%;
 		// !!! added hover 
 	}
 
 
 	// .hero-image__chart
-	&__chart {}
+	&__chart {
+		width: 100%;
+	}
 
 }
