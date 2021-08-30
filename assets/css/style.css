@@ -13368,3 +13368,73 @@ template {
 .stats__white {
     color: #FFFFFF;
 }
+
+.blog__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+}
+
+.blog__title {
+    font-family: "Quicksand__Medium";
+    font-size: 24px;
+    line-height: 30px;
+    color: #3D4F9F;
+}
+
+.blog__indicators {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #5283FF;
+}
+
+.blog__box-row {
+    border: 1px solid #D8E3FE;
+    box-shadow: 0px 15px 50px #EFF4FF;
+}
+
+.blog__description {
+    font-family: "Quicksand__Regular";
+    font-size: 36px;
+    line-height: 45px;
+    color: #3D4F9F;
+}
+
+.blog__text {
+    font-family: "Roboto__Regular";
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+}
+
+.blog__btn {
+    font-family: "Quicksand__Medium";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    width: 113px;
+    height: 43px;
+    border-radius: 2px;
+    border: none;
+}
+
+.blog__btn--bg-light-blue {
+    background-color: #D2E1FF;
+}
+
+.blog__btn--long {
+    width: 211px;
+}
+
+.blog__btn--light-blue {
+    color: #A6B6DA;
+}
+
+.blog__btn--blue {
+    color: #3A79FF;
+}
