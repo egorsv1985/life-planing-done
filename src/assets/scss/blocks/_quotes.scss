@@ -1,0 +1,80 @@
+.quotes {
+
+	background-image: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+	border: 1px solid #D8E3FE;
+	padding: 110px 262px 170px;
+
+	// .quotes__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		gap: 42px;
+	}
+
+	// .quotes__content
+	&__content {
+		padding-top: 35px;
+	}
+
+	// .quotes__subtitle
+	&__subtitle {
+		@include font ("Roboto__Medium", 10px, 12px, $text-transform: uppercase);
+		letter-spacing: 0.1em;
+		color: #3D4F9F;
+		margin-bottom: 32px;
+	}
+
+	// .quotes__title
+	&__title {
+		@include font ("Quicksand__Medium", 36px, 45px);
+		color: #3D4F9F;
+		margin-bottom: 15px;
+	}
+
+	// .quotes__text
+	&__text {
+		@include font ("OpenSans__bold", 12px, 23px);
+		letter-spacing: 0.03em;
+		color: #A4ABC8;
+		max-width: 315px;
+	}
+
+	// .quotes__carousel
+	&__carousel {}
+
+	// .quotes__indicators
+	&__indicators {
+		width: 8px !important;
+		height: 8px !important;
+		border-radius: 50%;
+		background-color: #5283FF !important;
+		margin-left: 6px !important;
+		margin-right: 6px !important;
+		bottom: -90px;
+	}
+
+	// .quotes__testimonials
+	&__testimonials {
+		filter: drop-shadow(0px 15px 50px #D4DCF1);
+		background-color: #FFFFFF;
+		border: 1px solid #D8E3FE;
+		box-shadow: 0px 5px 50px #F3F5FA;
+		padding: 35px 55px 0px 67px;
+	}
+
+	// .quotes__description
+	&__description {
+		@include font ("Roboto__regular", 14px, 24px);
+		letter-spacing: 0.03em;
+		color: #676F95;
+	}
+
+	// .quotes__user
+	&__user {
+		@include wh (62px);
+		border-radius: 50%;
+		transform: translateY(50%);
+		z-index: 1;
+	}
+}
