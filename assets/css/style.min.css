@@ -8293,8 +8293,7 @@ template {
     fill: #5E81FF; }
   .hero-image__box {
     position: absolute;
-    top: 19%;
-    left: 0;
+    bottom: 0;
     width: 100%; }
   .hero-image__chart {
     width: 100%; }
@@ -8651,7 +8650,7 @@ template {
     .blog__btn--blue {
       color: #3A79FF; }
   .blog__control {
-    top: 40%;
+    top: 5%;
     width: 21%; }
   .blog__control-icon {
     background-image: url(../images/blog/blog-left.png);
@@ -8692,14 +8691,15 @@ template {
     letter-spacing: 0.03em;
     color: #A4ABC8;
     max-width: 315px; }
+  .quotes__carousel {
+    bottom: -100px; }
   .quotes__indicators {
     width: 8px !important;
     height: 8px !important;
     border-radius: 50%;
     background-color: #5283FF !important;
     margin-left: 6px !important;
-    margin-right: 6px !important;
-    bottom: -100px; }
+    margin-right: 6px !important; }
   .quotes__testimonials {
     filter: drop-shadow(0px 15px 50px #D4DCF1);
     background-color: #FFFFFF;
@@ -8715,11 +8715,84 @@ template {
     color: #676F95; }
   .quotes__user {
     position: absolute;
-    top: 82%;
-    left: 43%;
+    top: 78%;
+    left: 42%;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     z-index: 1; }
+
+.faq {
+  padding-top: 176px; }
+  .faq__content {
+    margin-bottom: 65px; }
+  .faq__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+    margin-bottom: 20px; }
+  .faq__title {
+    font-family: "Quicksand__Medium";
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3D4F9F; }
+  .faq__accordion {
+    max-width: 730px; }
+  .faq__item:first-of-type .accordion-button {
+    border-radius: 0; }
+  .faq__item:last-of-type .accordion-button.collapsed {
+    border-radius: 0; }
+  .faq__button {
+    font-family: "Quicksand__Medium";
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #8E96B7;
+    position: relative;
+    border-bottom: 1px solid #D8E3FE;
+    border-radius: 0;
+    padding-left: 53px;
+    padding-bottom: 25px; }
+    .faq__button:not(.collapsed) {
+      color: #0c63e4;
+      background-color: #fff;
+      box-shadow: inset 0 -1px 0 black; }
+    .faq__button:after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 17px;
+      position: absolute;
+      top: 27%;
+      left: 2%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/faq/faq-arrow-folded.png"); }
+    .faq__button:focus {
+      z-index: 3;
+      border-bottom-color: #86b7fe;
+      outline: 0;
+      box-shadow: none; }
+  .faq__text {
+    font-family: "Roboto__Regular";
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD; }
+  .faq__btn {
+    width: 195px;
+    height: 43px;
+    font-family: "Quicksand__Medium";
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #E8ECF4;
+    border-radius: 2px;
+    color: #7382A3; }
 
 /*# sourceMappingURL=style.min.css.map */
