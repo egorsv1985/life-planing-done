@@ -1,0 +1,162 @@
+.faq {
+	padding-top: 176px;
+
+
+
+
+
+
+
+
+
+
+	// width: 730px;
+	// height: 0px;
+	// left: 355px;
+	// top: 4515px;
+
+	// border: 1px solid #D8E3FE;
+
+
+
+
+
+	// font-family: Quicksand;
+	// font-style: normal;
+	// font-weight: bold;
+	// font-size: 15px;
+	// line-height: 19px;
+	// display: flex;
+	// align-items: center;
+	// letter-spacing: 0.03em;
+
+	// color: #495274;
+
+
+
+
+	// width: 14px;
+	// height: 7px;
+	// left: 386px;
+	// top: 4636px;
+
+	// border: 3px solid #495274;
+	// transform: rotate(180deg);
+
+
+
+
+
+
+
+
+	// .faq__content
+	&__content {
+		margin-bottom: 65px;
+	}
+
+	// .faq__subtitle
+	&__subtitle {
+		@include font ("Roboto__Medium", 10px, 12px, center, uppercase);
+		letter-spacing: 0.1em;
+		color: #3D4F9F;
+		margin-bottom: 20px;
+	}
+
+	// .faq__title
+	&__title {
+		@include font ("Quicksand__Medium", 24px, 30px, center);
+		color: #3D4F9F;
+
+	}
+
+	// .faq__accordion
+	&__accordion {
+		max-width: 730px;
+	}
+
+	// .faq__item
+	&__item {
+		&:first-of-type {
+			.accordion-button {
+				border-radius: 0;
+
+			}
+		}
+
+		&:last-of-type {
+			.accordion-button.collapsed {
+				border-radius: 0;
+			}
+
+		}
+
+
+		// &:last-of-type .accordion-button.collapsed {
+		// 	border-bottom-right-radius: 0;
+		// 	border-bottom-left-radius: 0;
+		// }
+	}
+
+	// .faq__header
+	&__header {}
+
+	// .faq__button
+	&__button {
+		@include font ("Quicksand__Medium", 15px, 19px);
+		letter-spacing: 0.03em;
+		color: #8E96B7;
+		position: relative;
+		border-bottom: 1px solid #D8E3FE;
+		border-radius: 0;
+		padding-left: 53px;
+		padding-bottom: 25px;
+
+
+
+		&:not(.collapsed) {
+			color: #0c63e4;
+			background-color: #fff;
+			box-shadow: inset 0 -1px 0 rgb(0, 0, 0 / 13%);
+		}
+
+
+
+		&:after {
+			@include pseudo;
+			@include wh(14px, 17px);
+			@include pos (absolute, $top: 27%, $left:2%);
+			@include background (url("../images/faq/faq-arrow-folded.png"));
+
+		}
+
+		&:focus {
+			z-index: 3;
+			border-bottom-color: #86b7fe;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+
+	// .faq__collapse
+	&__collapse {}
+
+	// .faq__body
+	&__body {}
+
+	// .faq__text
+	&__text {
+		@include font ("Roboto__Regular", 14px, 27px);
+		letter-spacing: 0.03em;
+		color: #8D96BD;
+	}
+
+	// .faq__btn
+	&__btn {
+		@include wh (195px, 43px);
+		@include font ("Quicksand__Medium", 13px, 16px);
+		background-color: #E8ECF4;
+		border-radius: 2px;
+		color: #7382A3;
+	}
+}

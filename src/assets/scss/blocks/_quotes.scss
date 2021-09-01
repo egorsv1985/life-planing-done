@@ -42,7 +42,9 @@
 	}
 
 	// .quotes__carousel
-	&__carousel {}
+	&__carousel {
+		bottom: -100px;
+	}
 
 	// .quotes__indicators
 	&__indicators {
@@ -52,7 +54,7 @@
 		background-color: #5283FF !important;
 		margin-left: 6px !important;
 		margin-right: 6px !important;
-		bottom: -100px;
+
 	}
 
 	// .quotes__testimonials
@@ -74,7 +76,7 @@
 
 	// .quotes__user
 	&__user {
-		@include pos (absolute, $top: 82%, $left: 43%);
+		@include pos (absolute, $top: 78%, $left: 42%);
 		@include wh (62px);
 		border-radius: 50%;
 

@@ -77,7 +77,7 @@
 
 	// .hero-image__box
 	&__box {
-		@include pos (absolute, 19%, $left: 0);
+		@include pos (absolute, $bottom: 0);
 		width: 100%;
 		// !!! added hover 
 	}
