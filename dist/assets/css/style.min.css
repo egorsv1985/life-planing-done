@@ -8745,16 +8745,9 @@ template {
   .faq__accordion {
     max-width: 730px; }
   .faq__item {
-    border: none;
-    margin-bottom: 18px; }
-    .faq__item:first-of-type .accordion-button {
-      border-radius: 0; }
-    .faq__item:last-of-type .accordion-button.collapsed {
-      border-radius: 0; }
-    .faq__item:first-of-type, .faq__item:last-of-type {
-      border-radius: 0; }
-    .faq__item:last-of-type .accordion-collapse {
-      border-radius: 0; }
+    background-color: #fff;
+    border-bottom: 1px solid #D8E3FE;
+    margin-bottom: 16px; }
   .faq__button {
     font-family: "Quicksand__Medium";
     font-size: 15px;
@@ -8765,13 +8758,18 @@ template {
     border-bottom: 1px solid #D8E3FE;
     border-radius: 0;
     padding-left: 53px;
-    padding-bottom: 25px; }
+    padding-bottom: 24px;
+    background-color: #fff; }
     .faq__button:not(.collapsed) {
-      color: #495274;
-      background-color: #fff;
-      box-shadow: inset 0 -1px 0 black;
-      padding-bottom: 4px; }
-    .faq__button:after {
+      color: #8E96B7;
+      background-color: #fff; }
+      .faq__button:not(.collapsed)::after {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../images/faq/faq-arrow-folded.png");
+        transform: rotate(-180deg); }
+    .faq__button::after {
       content: "";
       display: block;
       width: 14px;
@@ -8784,13 +8782,10 @@ template {
       background-size: cover;
       background-image: url("../images/faq/faq-arrow-folded.png"); }
     .faq__button:focus {
-      z-index: 3;
-      border-bottom-color: #86b7fe;
-      outline: 0;
+      border-color: transparent;
       box-shadow: none; }
   .faq__body {
-    padding: 0px 10px 40px 72px;
-    border-bottom: 1px solid #D8E3FE; }
+    padding: 0 0 35px 70px; }
   .faq__text {
     font-family: "Roboto__Regular";
     font-size: 14px;
@@ -8798,7 +8793,7 @@ template {
     letter-spacing: 0.03em;
     color: #8D96BD;
     max-width: 415px;
-    margin-top: 15px; }
+    margin-right: 40px; }
   .faq__btn {
     width: 195px;
     height: 43px;
@@ -8808,7 +8803,8 @@ template {
     background-color: #E8ECF4;
     border-radius: 2px;
     color: #7382A3;
-    border-color: transparent; }
+    border-color: transparent;
+    margin-top: 9px; }
 
 .started {
   background-image: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%); }

@@ -1,60 +1,291 @@
+// .faq {
+// 	padding-top: 176px;
+// 	padding-bottom: 152px;
+
+// width: 730px;
+// height: 0px;
+// left: 355px;
+// top: 4515px;
+
+// border: 1px solid #D8E3FE;
+
+// font-family: Quicksand;
+// font-style: normal;
+// font-weight: bold;
+// font-size: 15px;
+// line-height: 19px;
+// display: flex;
+// align-items: center;
+// letter-spacing: 0.03em;
+
+// color: #495274;
+// width: 14px;
+// height: 7px;
+// left: 386px;
+// top: 4636px;
+
+// border: 3px solid #495274;
+// transform: rotate(180deg);
+
+// .faq__content
+// 	&__content {
+// 		margin-bottom: 65px;
+// 	}
+// .faq__subtitle
+// 	&__subtitle {
+// 		@include font ("Roboto__Medium", 10px, 12px, center, uppercase);
+// 		letter-spacing: 0.1em;
+// 		color: #3D4F9F;
+// 		margin-bottom: 20px;
+// 	}
+
+// .faq__title
+// 	&__title {
+// 		@include font ("Quicksand__Medium", 24px, 30px, center);
+// 		color: #3D4F9F;
+
+// 	}
+
+// .faq__accordion
+// 	&__accordion {
+// 		max-width: 730px;
+// 	}
+
+// .faq__item
+// 	&__item {
+
+// 		border: none;
+// 		margin-bottom: 18px;
+
+// 		&:first-of-type {
+// 			.accordion-button {
+// 				border-radius: 0;
+
+// 			}
+// 		}
+
+// 		&:last-of-type {
+// 			.accordion-button.collapsed {
+// 				border-radius: 0;
+// 			}
+
+// 		}
+
+// 		&:first-of-type,
+// 		&:last-of-type {
+// 			border-radius: 0;
+// 		}
+
+// 		&:last-of-type .accordion-collapse {
+// 			border-radius: 0;
+// 		}
+
+// &:last-of-type .accordion-button.collapsed {
+// 	border-bottom-right-radius: 0;
+// 	border-bottom-left-radius: 0;
+// }
+// 	}
+
+// .faq__header
+// 	&__header {}
+
+// .faq__button
+// 	&__button {
+
+
+// 		@include font ("Quicksand__Medium", 15px, 19px);
+// 		letter-spacing: 0.03em;
+// 		color: #8E96B7;
+// 		position: relative;
+// 		border-bottom: 1px solid #D8E3FE;
+// 		border-radius: 0;
+// 		padding-left: 53px;
+// 		padding-bottom: 25px;
+
+// 		&:not(.collapsed) {
+// 			color: #495274;
+// 			background-color: #fff;
+// 			box-shadow: inset 0 -1px 0 rgb(0, 0, 0 / 13%);
+// 			padding-bottom: 4px;
+
+// 			&:after {
+// 				@include pseudo;
+// 				@include wh(14px, 17px);
+// 				@include pos (absolute, $top: 27%, $left:2%);
+// 				@include background (url("../images/faq/faq-arrow-folded.png"));
+
+// 			}
+// 		}
+
+// 		&:focus {
+// 			z-index: 3;
+// 			border-bottom-color: #86b7fe;
+// 			outline: 0;
+// 			box-shadow: none;
+// 		}
+// 	}
+
+// .faq__collapse
+// 	&__collapse {}
+
+// .faq__body
+// 	&__body {
+// 		padding: 0px 10px 40px 72px;
+// 		border-bottom: 1px solid #D8E3FE;
+
+// 	}
+
+
+// .faq__text
+// 	&__text {
+// 		@include font ("Roboto__Regular", 14px, 27px);
+// 		letter-spacing: 0.03em;
+// 		color: #8D96BD;
+// 		max-width: 415px;
+// 		margin-top: 15px;
+// 	}
+
+// .faq__btn
+// 	&__btn {
+// 		@include wh (195px, 43px);
+// 		@include font ("Quicksand__Medium", 13px, 16px);
+// 		background-color: #E8ECF4;
+// 		border-radius: 2px;
+// 		color: #7382A3;
+// 		border-color: transparent;
+// 	}
+// }
+
+//
+// Base styles
+//
+
+// .accordion-button {
+// 	position: relative;
+// 	display: flex;
+// 	align-items: center;
+// 	width: 100%;
+// 	padding: $accordion-button-padding-y $accordion-button-padding-x;
+// 	@include font-size($font-size-base);
+// 	color: $accordion-button-color;
+// 	text-align: left; // Reset button style
+// 	background-color: $accordion-button-bg;
+// 	border: 0;
+// 	@include border-radius(0);
+// 	overflow-anchor: none;
+// 	@include transition($accordion-transition);
+
+// 	&:not(.collapsed) {
+// 	  color: $accordion-button-active-color;
+// 	  background-color: $accordion-button-active-bg;
+// 	  box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
+
+// 	  &::after {
+// 		 background-image: escape-svg($accordion-button-active-icon);
+// 		 transform: $accordion-icon-transform;
+// 	  }
+// 	}
+
+// Accordion icon
+// 	&::after {
+// 	  flex-shrink: 0;
+// 	  width: $accordion-icon-width;
+// 	  height: $accordion-icon-width;
+// 	  margin-left: auto;
+// 	  content: "";
+// 	  background-image: escape-svg($accordion-button-icon);
+// 	  background-repeat: no-repeat;
+// 	  background-size: $accordion-icon-width;
+// 	  @include transition($accordion-icon-transition);
+// 	}
+
+// 	&:hover {
+// 	  z-index: 2;
+// 	}
+
+// 	&:focus {
+// 	  z-index: 3;
+// 	  border-color: $accordion-button-focus-border-color;
+// 	  outline: 0;
+// 	  box-shadow: $accordion-button-focus-box-shadow;
+// 	}
+//  }
+
+//  .accordion-header {
+// 	margin-bottom: 0;
+//  }
+
+//  .accordion-item {
+// 	background-color: $accordion-bg;
+// 	border: $accordion-border-width solid $accordion-border-color;
+
+// 	&:first-of-type {
+// 	  @include border-top-radius($accordion-border-radius);
+
+// 	  .accordion-button {
+// 		 @include border-top-radius($accordion-inner-border-radius);
+// 	  }
+// 	}
+
+// 	&:not(:first-of-type) {
+// 	  border-top: 0;
+// 	}
+
+// Only set a border-radius on the last item if the accordion is collapsed
+// 	&:last-of-type {
+// 	  @include border-bottom-radius($accordion-border-radius);
+
+// 	  .accordion-button {
+// 		 &.collapsed {
+// 			@include border-bottom-radius($accordion-inner-border-radius);
+// 		 }
+// 	  }
+
+// 	  .accordion-collapse {
+// 		 @include border-bottom-radius($accordion-border-radius);
+// 	  }
+// 	}
+//  }
+
+//  .accordion-body {
+// 	padding: $accordion-body-padding-y $accordion-body-padding-x;
+//  }
+
+
+// Flush accordion items
+//
+// Remove borders and border-radius to keep accordion items edge-to-edge.
+
+//  .accordion-flush {
+// 	.accordion-collapse {
+// 	  border-width: 0;
+// 	}
+
+// 	.accordion-item {
+// 	  border-right: 0;
+// 	  border-left: 0;
+// 	  @include border-radius(0);
+
+// 	  &:first-child { border-top: 0; }
+// 	  &:last-child { border-bottom: 0; }
+
+// 	  .accordion-button {
+// 		 @include border-radius(0);
+// 	  }
+// 	}
+//  }
+
+
 .faq {
+
 	padding-top: 176px;
 	padding-bottom: 152px;
-
-
-
-
-
-
-
-
-
-
-	// width: 730px;
-	// height: 0px;
-	// left: 355px;
-	// top: 4515px;
-
-	// border: 1px solid #D8E3FE;
-
-
-
-
-
-	// font-family: Quicksand;
-	// font-style: normal;
-	// font-weight: bold;
-	// font-size: 15px;
-	// line-height: 19px;
-	// display: flex;
-	// align-items: center;
-	// letter-spacing: 0.03em;
-
-	// color: #495274;
-
-
-
-
-	// width: 14px;
-	// height: 7px;
-	// left: 386px;
-	// top: 4636px;
-
-	// border: 3px solid #495274;
-	// transform: rotate(180deg);
-
-
-
-
-
-
-
 
 	// .faq__content
 	&__content {
 		margin-bottom: 65px;
 	}
+
 
 	// .faq__subtitle
 	&__subtitle {
@@ -68,7 +299,6 @@
 	&__title {
 		@include font ("Quicksand__Medium", 24px, 30px, center);
 		color: #3D4F9F;
-
 	}
 
 	// .faq__accordion
@@ -78,37 +308,9 @@
 
 	// .faq__item
 	&__item {
-
-		border: none;
-		margin-bottom: 18px;
-
-		&:first-of-type {
-			.accordion-button {
-				border-radius: 0;
-
-			}
-		}
-
-		&:last-of-type {
-			.accordion-button.collapsed {
-				border-radius: 0;
-			}
-
-		}
-
-		&:first-of-type,
-		&:last-of-type {
-			border-radius: 0;
-		}
-
-		&:last-of-type .accordion-collapse {
-			border-radius: 0;
-		}
-
-		// &:last-of-type .accordion-button.collapsed {
-		// 	border-bottom-right-radius: 0;
-		// 	border-bottom-left-radius: 0;
-		// }
+		background-color: #fff;
+		border-bottom: 1px solid #D8E3FE;
+		margin-bottom: 16px;
 	}
 
 	// .faq__header
@@ -123,29 +325,37 @@
 		border-bottom: 1px solid #D8E3FE;
 		border-radius: 0;
 		padding-left: 53px;
-		padding-bottom: 25px;
+		padding-bottom: 24px;
+		background-color: #fff;
+
 
 		&:not(.collapsed) {
-			color: #495274;
+			color: #8E96B7;
 			background-color: #fff;
-			box-shadow: inset 0 -1px 0 rgb(0, 0, 0 / 13%);
-			padding-bottom: 4px;
+			// box-shadow: inset 0 ($accordion-border-width * -1) 0 $accordion-border-color;
+
+			&::after {
+				@include background (url("../images/faq/faq-arrow-folded.png"));
+				transform: rotate(-180deg);
+
+			}
 		}
 
-
-
-		&:after {
+		// 	  z-index: 3;
+		// 	  border-color: $accordion-button-focus-border-color;
+		// 	  outline: 0;
+		// 	  box-shadow: $accordion-button-focus-box-shadow;
+		&::after {
 			@include pseudo;
 			@include wh(14px, 17px);
 			@include pos (absolute, $top: 27%, $left:2%);
 			@include background (url("../images/faq/faq-arrow-folded.png"));
-
 		}
 
+		&:hover {}
+
 		&:focus {
-			z-index: 3;
-			border-bottom-color: #86b7fe;
-			outline: 0;
+			border-color: transparent;
 			box-shadow: none;
 		}
 	}
@@ -155,11 +365,11 @@
 
 	// .faq__body
 	&__body {
-		padding: 0px 10px 40px 72px;
-		border-bottom: 1px solid #D8E3FE;
-
+		padding: 0 0 35px 70px;
 	}
 
+	// .faq__row
+	&__row {}
 
 	// .faq__text
 	&__text {
@@ -167,7 +377,8 @@
 		letter-spacing: 0.03em;
 		color: #8D96BD;
 		max-width: 415px;
-		margin-top: 15px;
+		margin-right: 40px;
+
 	}
 
 	// .faq__btn
@@ -178,5 +389,6 @@
 		border-radius: 2px;
 		color: #7382A3;
 		border-color: transparent;
+		margin-top: 9px;
 	}
 }
