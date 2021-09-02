@@ -1,100 +1,13 @@
 .started {
 	background-image: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// /* Actions */
-
-	// position: absolute;
-	// width: 76.81px;
-	// height: 17px;
-	// left: 746.78px;
-	// top: 5440px;
-
-	// font-family: Quicksand;
-	// font-style: normal;
-	// font-weight: bold;
-	// font-size: 13px;
-	// line-height: 16px;
-	// /* identical to box height */
-	// display: flex;
-	// align-items: center;
-	// text-align: center;
-
-
-
-	// /* Rectangle 2 */
-
-	// position: absolute;
-	// width: 130.08px;
-	// height: 43px;
-	// left: 578px;
-	// top: 5427px;
-
-	// background: #FFFFFF;
-	// box-shadow: 0px 5px 15px #6480E8;
-	// border-radius: 2px;
-
-
-	// /* View pricing */
-
-	// position: absolute;
-	// width: 96px;
-	// height: 17px;
-	// left: 595px;
-	// top: 5440px;
-
-	// font-family: Quicksand;
-	// font-style: normal;
-	// font-weight: bold;
-	// font-size: 13px;
-	// line-height: 16px;
-	// /* identical to box height */
-	// display: flex;
-	// align-items: center;
-	// text-align: center;
-
-	// color: #565F82;
-
-
-
-	// /* Read documentation */
-
-	// position: absolute;
-	// width: 138px;
-	// height: 17px;
-	// left: 716px;
-	// top: 5440px;
-
-	// font-family: Quicksand;
-	// font-style: normal;
-	// font-weight: 500;
-	// font-size: 13px;
-	// line-height: 16px;
-	// /* identical to box height */
-	// display: flex;
-	// align-items: center;
-	// text-align: center;
-
-	// color: #C7D3FF;
-
-
+	padding: 90px 0;
 
 	// .started__subtitle
 	&__subtitle {
 		@include font ("Roboto__Medium", 10px, 12px, center, uppercase);
 		letter-spacing: 0.1em;
 		color: #FFFFFF;
+		margin-bottom: 18px;
 	}
 
 	// .started__title
@@ -104,6 +17,7 @@
 
 		font-weight: 300;
 		color: #FFFFFF;
+		margin-bottom: 25px;
 
 		&--bold {
 			font-family: "Quicksand__Medium";
@@ -115,6 +29,8 @@
 		@include font ("Roboto__Regular", 15px, 29px, center);
 		letter-spacing: 0.03em;
 		color: #FFFFFF;
+		max-width: 725px;
+		margin-bottom: 50px;
 	}
 
 	// .started__btn-group
@@ -122,8 +38,30 @@
 
 	// .started__btn
 	&__btn {
-		@include wh (155px, 43px);
-		border: 1px solid #A0B4FF;
 		border-radius: 2px;
 	}
+
+	// .started__btn-view
+	&__btn-view {
+		@include font ("Quicksand__Bold", 13px, 16px);
+		@include wh (130px, 43px);
+		color: #565F82;
+		background-color: #FFFFFF;
+		box-shadow: 0px 5px 15px #6480E8;
+
+
+	}
+
+	// .started__btn-read
+	&__btn-read {
+		@include font ("Quicksand__Medium", 13px, 16px);
+		@include wh (155px, 43px);
+		border: 1px solid #A0B4FF;
+		color: #C7D3FF;
+
+
+
+	}
+
+
 }
