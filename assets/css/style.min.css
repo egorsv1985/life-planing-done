@@ -8723,7 +8723,8 @@ template {
     z-index: 1; }
 
 .faq {
-  padding-top: 176px; }
+  padding-top: 176px;
+  padding-bottom: 152px; }
   .faq__content {
     margin-bottom: 65px; }
   .faq__subtitle {
@@ -8743,10 +8744,17 @@ template {
     color: #3D4F9F; }
   .faq__accordion {
     max-width: 730px; }
-  .faq__item:first-of-type .accordion-button {
-    border-radius: 0; }
-  .faq__item:last-of-type .accordion-button.collapsed {
-    border-radius: 0; }
+  .faq__item {
+    border: none;
+    margin-bottom: 18px; }
+    .faq__item:first-of-type .accordion-button {
+      border-radius: 0; }
+    .faq__item:last-of-type .accordion-button.collapsed {
+      border-radius: 0; }
+    .faq__item:first-of-type, .faq__item:last-of-type {
+      border-radius: 0; }
+    .faq__item:last-of-type .accordion-collapse {
+      border-radius: 0; }
   .faq__button {
     font-family: "Quicksand__Medium";
     font-size: 15px;
@@ -8759,9 +8767,10 @@ template {
     padding-left: 53px;
     padding-bottom: 25px; }
     .faq__button:not(.collapsed) {
-      color: #0c63e4;
+      color: #495274;
       background-color: #fff;
-      box-shadow: inset 0 -1px 0 black; }
+      box-shadow: inset 0 -1px 0 black;
+      padding-bottom: 4px; }
     .faq__button:after {
       content: "";
       display: block;
@@ -8779,12 +8788,17 @@ template {
       border-bottom-color: #86b7fe;
       outline: 0;
       box-shadow: none; }
+  .faq__body {
+    padding: 0px 10px 40px 72px;
+    border-bottom: 1px solid #D8E3FE; }
   .faq__text {
     font-family: "Roboto__Regular";
     font-size: 14px;
     line-height: 27px;
     letter-spacing: 0.03em;
-    color: #8D96BD; }
+    color: #8D96BD;
+    max-width: 415px;
+    margin-top: 15px; }
   .faq__btn {
     width: 195px;
     height: 43px;
@@ -8793,6 +8807,7 @@ template {
     line-height: 16px;
     background-color: #E8ECF4;
     border-radius: 2px;
-    color: #7382A3; }
+    color: #7382A3;
+    border-color: transparent; }
 
 /*# sourceMappingURL=style.min.css.map */
