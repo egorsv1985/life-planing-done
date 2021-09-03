@@ -8746,8 +8746,9 @@ template {
     max-width: 730px; }
   .faq__item {
     background-color: #fff;
+    border: none !important;
     border-bottom: 1px solid #D8E3FE;
-    margin-bottom: 16px; }
+    margin-bottom: 16px !important; }
   .faq__button {
     font-family: "Quicksand__Medium";
     font-size: 15px;
@@ -8783,7 +8784,8 @@ template {
       background-image: url("../images/faq/faq-arrow-folded.png"); }
     .faq__button:focus {
       border-color: transparent;
-      box-shadow: none; }
+      box-shadow: none;
+      outline: 1px solid transparent; }
   .faq__body {
     padding: 0 0 35px 70px; }
   .faq__text {

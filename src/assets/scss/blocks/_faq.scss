@@ -309,8 +309,9 @@
 	// .faq__item
 	&__item {
 		background-color: #fff;
+		border: none !important;
 		border-bottom: 1px solid #D8E3FE;
-		margin-bottom: 16px;
+		margin-bottom: 16px !important;
 	}
 
 	// .faq__header
@@ -357,6 +358,7 @@
 		&:focus {
 			border-color: transparent;
 			box-shadow: none;
+			outline: 1px solid transparent;
 		}
 	}
 
