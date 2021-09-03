@@ -1,0 +1,50 @@
+.newsletter {
+
+	background-color: #FCFDFF;
+	border-top: 1px solid #D8E3FE;
+	border-bottom: 1px solid #D8E3FE;
+	padding: 114px 0 120px 264px;
+
+	// .newsletter__content
+	&__content {
+		margin-right: 35px;
+		padding-top: 8px;
+	}
+
+	// .newsletter__title
+	&__title {
+		@include font ("Quicksand__Bold", 18px, 22px);
+		color: #3D4F9F;
+		margin-bottom: 13px;
+	}
+
+	// .newsletter__text
+	&__text {
+		@include font ("Roboto__Regular", 14px, 27px);
+		letter-spacing: 0.03em;
+		color: #8D96BD;
+		max-width: 350px;
+	}
+
+
+	// .newsletter__form-email
+	&__form-email {
+		@include wh (279px, 59px);
+		@include font ("Quicksand__Bold", 13px, 16px);
+		background-color: #EFEFF7;
+		border-radius: 5px;
+		color: #7A85AD;
+		padding-left: 24px;
+	}
+
+	// .newsletter__btn
+	&__btn {
+		@include wh (184px, 59px);
+		@include font ("Quicksand__Bold", 13px, 16px);
+		background-color: #4D6CE1;
+		box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+		border-radius: 5px;
+		color: #FFFFFF;
+		@include pos (relative, $top: 29%);
+	}
+}

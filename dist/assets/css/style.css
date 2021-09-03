@@ -13579,7 +13579,7 @@ template {
 }
 
 .blog__control {
-    top: 40%;
+    top: 5%;
     width: 21%;
 }
 
@@ -13638,6 +13638,10 @@ template {
     max-width: 315px;
 }
 
+.quotes__carousel {
+    bottom: -100px;
+}
+
 .quotes__indicators {
     width: 8px !important;
     height: 8px !important;
@@ -13645,7 +13649,6 @@ template {
     background-color: #5283FF !important;
     margin-left: 6px !important;
     margin-right: 6px !important;
-    bottom: -100px;
 }
 
 .quotes__testimonials {
@@ -13668,10 +13671,188 @@ template {
 
 .quotes__user {
     position: absolute;
-    top: 82%;
-    left: 43%;
+    top: 78%;
+    left: 42%;
     width: 62px;
     height: 62px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.faq {
+    padding-top: 176px;
+    padding-bottom: 160px;
+}
+
+.faq__content {
+    margin-bottom: 65px;
+}
+
+.faq__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+    margin-bottom: 20px;
+}
+
+.faq__title {
+    font-family: "Quicksand__Medium";
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #3D4F9F;
+}
+
+.faq__accordion {
+    max-width: 730px;
+}
+
+.faq__item {
+    background-color: #fff;
+    border-bottom: 1px solid #D8E3FE;
+    margin-bottom: 16px;
+}
+
+.faq__button {
+    font-family: "Quicksand__Medium";
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #8E96B7;
+    position: relative;
+    border-bottom: 1px solid #D8E3FE;
+    border-radius: 0;
+    padding-left: 53px;
+    padding-bottom: 24px;
+    background-color: #fff;
+}
+
+.faq__button:not(.collapsed) {
+    color: #8E96B7;
+    background-color: #fff;
+}
+
+.faq__button:not(.collapsed)::after {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/faq/faq-arrow-folded.png");
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.faq__button::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 17px;
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/faq/faq-arrow-folded.png");
+}
+
+.faq__button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.faq__body {
+    padding: 0 0 35px 70px;
+}
+
+.faq__text {
+    font-family: "Roboto__Regular";
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    max-width: 415px;
+    margin-right: 40px;
+}
+
+.faq__btn {
+    width: 195px;
+    height: 43px;
+    font-family: "Quicksand__Medium";
+    font-size: 13px;
+    line-height: 16px;
+    background-color: #E8ECF4;
+    border-radius: 2px;
+    color: #7382A3;
+    border-color: transparent;
+    margin-top: 9px;
+}
+
+.started {
+    background-image: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+    padding: 90px 0;
+}
+
+.started__subtitle {
+    font-family: "Roboto__Medium";
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.started__title {
+    font-family: "Quicksand__Regular";
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.started__title--bold {
+    font-family: "Quicksand__Medium";
+}
+
+.started__text {
+    font-family: "Roboto__Regular";
+    font-size: 15px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    max-width: 725px;
+    margin-bottom: 50px;
+}
+
+.started__btn {
+    border-radius: 2px;
+}
+
+.started__btn-view {
+    font-family: "Quicksand__Bold";
+    font-size: 13px;
+    line-height: 16px;
+    width: 130px;
+    height: 43px;
+    color: #565F82;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 15px #6480E8;
+}
+
+.started__btn-read {
+    font-family: "Quicksand__Medium";
+    font-size: 13px;
+    line-height: 16px;
+    width: 155px;
+    height: 43px;
+    border: 1px solid #A0B4FF;
+    color: #C7D3FF;
 }
