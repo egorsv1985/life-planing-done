@@ -1,0 +1,42 @@
+.footer {
+	padding: 86px 105px;
+
+	// .footer__iner
+	&__iner {}
+
+	// .footer__logo
+	&__logo {
+		@include wh(26px);
+		background-color: #5E81FE;
+		border-radius: 50%;
+	}
+
+	// .footer__menu
+	&__menu {
+		background-color: #FFFFFF !important;
+		margin-bottom: 10px;
+	}
+
+	// .footer__wrapper
+	&__wrapper {}
+
+	// .footer__btn
+	&__btn {
+		@include wh(113px, 43px);
+		background-color: #D2E1FF;
+		border-radius: 2px;
+		@include font ("Quicksand__Bold", 13px, 16px, center);
+		color: #3A79FF;
+		margin-left: 28px;
+
+		border: none;
+	}
+
+	// .footer__small
+	&__small {
+		@include font ("Quicksand__Medium", 12px, 15px, $text-transform: capitalize);
+		letter-spacing: 0.05em;
+		color: #AEB8D0;
+		margin-left: 112px;
+	}
+}

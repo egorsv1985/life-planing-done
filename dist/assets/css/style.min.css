@@ -8901,4 +8901,35 @@ template {
     position: relative;
     top: 29%; }
 
+.footer {
+  padding: 86px 105px; }
+  .footer__logo {
+    width: 26px;
+    height: 26px;
+    background-color: #5E81FE;
+    border-radius: 50%; }
+  .footer__menu {
+    background-color: #FFFFFF !important;
+    margin-bottom: 10px; }
+  .footer__btn {
+    width: 113px;
+    height: 43px;
+    background-color: #D2E1FF;
+    border-radius: 2px;
+    font-family: "Quicksand__Bold";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #3A79FF;
+    margin-left: 28px;
+    border: none; }
+  .footer__small {
+    font-family: "Quicksand__Medium";
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0.05em;
+    color: #AEB8D0;
+    margin-left: 112px; }
+
 /*# sourceMappingURL=style.min.css.map */
